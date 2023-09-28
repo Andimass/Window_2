@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first_block {
+    max-height: 840px;
+    font-size: 16px; /* Размер шрифта */
+    margin-left: 41px; /* Отступ от левого края */
+    margin-top: 80px; /* Отступ от черной линии */
+    top: 2px; /* Расстояние от черной линии */
+}
+
+.container_block {
+    font-family: 'Montserrat', sans-serif; /* Подключение шрифта Montserrat */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    max-height: 94px;
+    margin: 30px auto 0; /* Установите отступ сверху (30px в данном случае) */
+    padding: 30px 70px; /* Внутренние отступы контейнера */
+}
+
+.title{
+    position:absolute;
+    font-size: 40px;
+    max-width: 639px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: normal;
+
+}
+
+.text{
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 590px;
+    max-height: 80px;
+    margin-top: 170px;
+    font-weight: 500;
+    line-height: 21px;
+    position: absolute;
+}
+
+.podrobnee {
+  position: absolute;
+  margin-top: 320px;
+  text-transform: uppercase;
+  font-weight: 500; /* Сделать текст жирным */
+  color: #000; /* Черный цвет текста */
+  text-decoration: underline; /* Подчеркивание текста */
+}
+
+
+.image{
+    margin-top: 570px;
+    margin-left: 675px;
+    max-width: 660px; /* Максимальная ширина */
+    max-height: 616px; /* Максимальная высота */
+    width: 660px; /* Автоматическая ширина */
+    height: 616px; /* Автоматическая высота */
+    animation: fadeIn 1.5s ease-in-out;
+    position: absolute;
+
+}
+
+.image.active {
+  animation: fadeIn 1.5s ease-in-out; /* Применяем анимацию fadeIn с продолжительностью 1 секунда и эффектом ease-in-out */
+}
+
+.slaider {
+    display: inline-flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-top: 700px;
+    margin-left: -21px;
+    position: absolute;
+    }
+
+.slaider_image {
+  margin: 0 20px; /* Отступы от стрелок */
+}
+
+.catalog{
+  margin-top: 300px; /* Отступ от стрелочек вниз */
+    margin-left: -140px;
+    border: 1px solid #000000;
+    padding: 15px 72px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: font-weight 0.05s, border 0.05s;
+    text-transform: uppercase;
+}
+
+.catalog:hover {
+  font-weight: 700; /* Увеличиваем font-weight при наведении */
+  border: 2px solid #000000; /* Увеличиваем ширину border при наведении */
+}

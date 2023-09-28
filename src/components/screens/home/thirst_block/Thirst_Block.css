@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.container_3 {
+  justify-content: space-between;
+  width: 1440px;
+  height: 680px;
+  margin: 140px auto 0;
+  padding: 51px 0;
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transform: translateY(0px) translateX(-800px);
+}
+
+.container_3.revealeds {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  /* Другие стили для видимого блока */
+}
+
+.line_2 {
+  content: "";
+  bottom: -32px;
+  width: 1350px;
+  height: 2px;
+  background-color: #000;
+  margin-left: 40px;
+}
+
+.title_3 {
+  margin-top: 20px;
+  margin-left: 44px;
+  max-width: 1010px;
+  max-height: 168px;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.text_and_image {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/*.text_and_image img {*/
+/*  animation: slideInFromLeft 1.5s ease forwards;*/
+/*}*/
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(+300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.new_title {
+  margin-left: 40px; /* Отступ слева от текста */
+  margin-top: -670px;
+  text-align: right;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 600px;
+  white-space: nowrap; /* Запрещаем перенос строки */
+}
+
+.new_text {
+  max-width: 660px;
+  margin-top: -500px; /* Установите нужный отступ между new_title и new_text */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: -270px;
+  line-height: normal;
+}
+
+.text_and_image_2 {
+  margin-top: -22%;
+  margin-left: 52%;
+}
+
+/*.text_and_image_2 img{*/
+/*    animation: slideInFromRight 1.5s ease forwards;*/
+/*}*/
+
+
+.new_title_2 {
+  text-align: right;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 600px;
+  white-space: nowrap; /* Запрещаем перенос строки */
+  margin-left: -1100px;
+  margin-top: -320px;
+}
+
+.new_text_1 {
+  max-width: 662px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 41px;
+  margin-left: -710px;
+}
+
+.text_and_image img.slideLeft {
+  animation: slideLeft 1.5s ease forwards;
+}
+
+.text_and_image_2 img.slideRight {
+  animation: slideRight 1.5s ease forwards;
+}

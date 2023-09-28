@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.container_2 {
+  justify-content: space-between;
+  width: 1440px; /* Максимальная ширина контейнера */
+  height: 680px;
+  margin: 750px auto 0; /* Установите отступ сверху (30px в данном случае) */
+  padding: 51px 0; /* Внутренние отступы контейнера */
+  background-color: #f8f8f8;
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transform: translateY(0%) translateX(100%);
+
+}
+
+.container_2.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  /* Другие стили для видимого блока */
+}
+
+
+.line_2 {
+  content: "";
+  bottom: -32px; /* Отступ вниз от заголовка */
+  width: 1350px; /* Длина линии */
+  height: 2px; /* Ширина линии */
+  background-color: #000; /* Цвет линии */
+  margin-left: 40px; /* Отступ слева на 20px */
+}
+
+.text_2{
+  margin-top: 20px;
+  margin-left: 44px;
+  max-width: 1010px;
+  max-height: 168px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.al {
+  display: flex;
+}
+
+
+.al_1 {
+  margin-top: 85px;
+  margin-left: 40px;
+  width: 660px;
+  height: 397px;
+  background: #FFF;
+}
+
+.al_2 {
+  margin-top: 85px;
+  margin-left: 40px;
+  width: 660px;
+  height: 397px;
+  background: #FFF;
+}
+
+.imag1 {
+  margin-top: 53px;
+  margin-left: 369px;
+}
+
+.imag2 {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.al_title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -370px; /* Применяется к заголовкам внутри .al */
+  margin-left: 28px;
+}
+
+.charac-container {
+  margin-top: 60px; /* Отступ от текста наверху */
+}
+
+.charac-container_2 {
+  margin-top: 60px; /* Отступ от текста наверху */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes imageUp {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes imageDown {
+  0% {
+    transform: translateY(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.charac {
+  display: compact;
+  margin-left: 55px;
+  margin-top: 5px;
+  position: relative; /* Добавляем позиционирование для создания псевдоэлемента */
+  opacity: 0; /* Начальная прозрачность элементов */
+}
+
+.charac::before {
+  content: ''; /* Пустой контент для псевдоэлемента */
+  display: block;
+  position: absolute;
+  left: -18px; /* Расстояние между линией и текстом */
+  width: 13px; /* Длина линии */
+  height: 1px; /* Толщина линии */
+  background-color: #000; /* Цвет линии */
+  top: 50%; /* Выравнивание линии по вертикали */
+  transform: translateY(-50%); /* Смещение линии вверх, чтобы она была посередине текста */
+}
+
+.charac-more {
+  position: absolute;
+  margin-top: 156px; /* Отступ слева от "Материалы" */
+  text-decoration: underline; /* Подчеркивание текста */
+  margin-left: -110px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.charac2 {
+  display: compact;
+  margin-left: 55px;
+  margin-top: 5px;
+  position: relative; /* Добавляем позиционирование для создания псевдоэлемента */
+  opacity: 0; /* Начальная прозрачность элементов */
+}
+
+.charac2::before {
+  content: ''; /* Пустой контент для псевдоэлемента */
+  display: block;
+  position: absolute;
+  left: -18px; /* Расстояние между линией и текстом */
+  width: 13px; /* Длина линии */
+  height: 1px; /* Толщина линии */
+  background-color: #000; /* Цвет линии */
+  top: 50%; /* Выравнивание линии по вертикали */
+  transform: translateY(-50%); /* Смещение линии вверх, чтобы она была посередине текста */
+}
+
+.charac-more2 {
+  position: absolute;
+  margin-top: 156px; /* Отступ слева от "Материалы" */
+  text-decoration: underline; /* Подчеркивание текста */
+  margin-left: -110px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.imag1.imageUp{
+  animation: imageUp 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.imag2.imageDown{
+  animation: imageDown 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.charac.slideInFromLeft{
+  animation: slideInFromLeft 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+  animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+}
+
+.charac:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.charac:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.charac:nth-child(3) {
+  animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.charac:nth-child(4) {
+  animation-delay: 0.8s; /* Задержка для четвертого элемента */
+}
+
+.charac2.slideInFromRight {
+  animation: slideInFromRight 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+  animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+}
+
+.charac2:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.charac2:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.charac2:nth-child(3) {
+  animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.charac2:nth-child(4) {
+  animation-delay: 0.8s; /* Задержка для четвертого элемента */
+}

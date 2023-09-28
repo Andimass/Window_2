@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.container_4{
+    justify-content: space-between;
+    width: 1440px; /* Максимальная ширина контейнера */
+    height: 757px;
+    margin: 850px auto 0; /* Установите отступ сверху (30px в данном случае) */
+    padding: 89px 0; /* Внутренние отступы контейнера */
+    background-color: #f8f8f8;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+}
+
+.container_4.revealeds {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  /* Другие стили для видимого блока */
+}
+
+.line_3 {
+  content: "";
+  bottom: -32px; /* Отступ вниз от заголовка */
+  width: 0; /* Начальная ширина линии (0%) */
+  height: 2px; /* Ширина линии */
+  background-color: #000; /* Цвет линии */
+  margin-left: 40px; /* Отступ слева на 20px */
+}
+
+
+@keyframes fillLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 660px; /* Завершение анимации при 100% ширины */
+  }
+}
+
+.el_1{
+    max-width: 660px;
+    max-height: 219px;
+}
+
+.title_1{
+    margin-top: 21px;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.text_1{
+    margin-top: 66px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.img1{
+    margin-top: -173px;
+    margin-left: 448px;
+}
+
+.p1{
+    opacity: 0; /* Начальная прозрачность элементов */
+}
+
+.el_2{
+    max-width: 660px;
+    max-height: 219px;
+    margin-left: 710px;
+    margin-top: -218px;
+}
+
+.title_2{
+    margin-top: 21px;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+
+}
+
+.text_2a{
+    margin-top: 66px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.img2{
+    margin-top: -173px;
+    margin-left: 448px;
+}
+
+.p2{
+    opacity: 0; /* Начальная прозрачность элементов */
+}
+
+.el_3{
+    max-width: 660px;
+    max-height: 219px;
+    margin-top: 103px;
+}
+
+.title_3{
+    margin-top: 21px;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+
+}
+
+.text_3{
+    margin-top: 66px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.img3{
+    margin-top: -173px;
+    margin-left: 448px;
+}
+
+.p3{
+    opacity: 0; /* Начальная прозрачность элементов */
+}
+
+.el_4{
+    max-width: 660px;
+    max-height: 219px;
+    margin-left: 710px;
+    margin-top: -218px;
+}
+
+.title_4{
+    margin-top: 21px;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.text_4{
+    margin-top: 66px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.img4{
+    margin-top: -173px;
+    margin-left: 448px;
+}
+
+.p4{
+    opacity: 0; /* Начальная прозрачность элементов */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes imageUp {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes imageDown {
+  0% {
+    transform: translateY(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.line_3.fillLine {
+    animation: fillLine 1.5s ease forwards; /* Анимация заполнения */
+}
+
+.p1.slideInFromLeft {
+    animation: slideInFromLeft 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+    animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+}
+
+.p1:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.p1:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.p1:nth-child(3) {
+  animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.p2.slideInFromRight {
+    animation: slideInFromRight 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+    animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+
+}
+
+.p2:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.p2:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.p2:nth-child(3) {
+    animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.p3.slideInFromLeft {
+    animation: slideInFromLeft 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+    animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+
+}
+
+.p3:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.p3:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.p3:nth-child(3) {
+    animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.p4.slideInFromRight {
+    animation: slideInFromRight 0.5s ease forwards; /* Применяем анимацию к каждому элементу */
+    animation-delay: 0.2s; /* Задержка анимации для каждого элемента */
+
+}
+
+.p4:nth-child(1) {
+  animation-delay: 0.2s; /* Задержка для первого элемента */
+}
+
+.p4:nth-child(2) {
+  animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.p4:nth-child(3) {
+    animation-delay: 0.6s; /* Задержка для третьего элемента */
+}
+
+.title_1.imageDown{
+    animation: imageDown 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.title_2.imageDown{
+    animation: imageDown 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.title_3.imageUp{
+    animation: imageUp 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.title_4.imageUp{
+    animation: imageUp 1.5s ease forwards; /* Применяем анимацию к каждому элементу */
+}
+
+.img1.imageDown{
+    animation: imageDown 1.5s ease forwards;
+}
+
+.img2.imageDown{
+    animation: imageDown 1.5s ease forwards;
+}
+
+.img3.imageUp{
+    animation: imageUp 1.5s ease forwards;
+}
+
+.img4.imageUp{
+    animation: imageUp 1.5s ease forwards;
+}

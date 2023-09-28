@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.container_7{
+    justify-content: space-between;
+    max-width: 1440px;
+    max-height: 1314px;
+    margin: 201px auto 0;
+}
+
+.line_4{
+  height: 2px;
+  width: 1360px;
+  background-color: #000000;
+  margin-left: 40px;
+}
+
+.title_container_7{
+    margin-top: 12px;
+    margin-left: 38px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.object_container_7{
+    margin-top: 94px;
+}
+
+.object_1_container_7{
+    margin-left: 38px;
+}
+
+.object_1_container_7 iframe{
+    width: 661px;
+    height: 452px;
+}
+
+.object_1_text_container_7{
+    margin-top: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+.object_1_data_container_7{
+    margin-top: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.object_2_container_7{
+    margin-left: 35px;
+}
+
+.object_2_container_7 iframe{
+    width: 661px;
+    height: 452px;
+}
+
+.object_2_text_container_7{
+    margin-top: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+.object_2_data_container_7{
+    margin-top: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.object_dop_1_container_7{
+    display: flex;
+}
+
+.object_3_container_7{
+    margin-left: 35px;
+}
+
+.object_3_container_7 iframe{
+    width: 661px;
+    height: 452px;
+}
+
+.object_3_text_container_7{
+    margin-top: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+.object_3_data_container_7{
+    margin-top: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.object_dop_2_container_7{
+    display: flex;
+    margin-top: 83px;
+}
+
